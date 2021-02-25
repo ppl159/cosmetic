@@ -8,11 +8,13 @@ $(document).ready(function(){
         //pc
         //section의 높이는 브라우저의 높이로 설정
         $('section').css('height',winH);
-        $('.banner').css('height','auto'); //밑에가 잘려서 .banner만 높이를 auto로 맞춰줌
+        $('.new').css('height','auto');
+        $('.banner').css('height','auto');
+        //밑에가 잘려서 .banner만 높이를 auto로 맞춰줌
     }
     }
     //모바일 메뉴의 높이는 장치의 높이와 같음
-    $('.mobile_menu').css('height','auto');
+    $('.mobile_menu').css('height',winH);
     
     //헤더 배경 변환
     $(window).scroll(function(){
