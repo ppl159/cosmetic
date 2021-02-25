@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+a{display:block; text-decoration:none; color:#212121; font-family: 'Nanum Gothic', sans-serif;}
+a:hover{text-decoration:none; color:#212121;}
+body{font-family: 'Nanum Gothic', sans-serif;}
+
+/*@font-face 쓸때 src:local(※)-내 홈페이지에 접속한 사용자의 컴퓨터에
+글꼴이 있으면 다운 받지 말아라 (당구장처럼 특수기호를 사용하면 사용자 컴퓨터 감지함)*/
+img{width:100%;}
+.wrap{width:100%;}
+header{
+    position:absolute;
+    z-index:100;
+    width:100%;
+    height:125px;
+    background-color:transparent;
+    display:flex;
+    justify-content:space-between;
+    transition:all 1s;
+}
+header.active{
+    position:fixed; /*스크롤의 영향을 안받는다*/
+    background-color:rgba(0,0,0,0.3);
+}
+header .logo{
+    width:5.2vw;
+    margin:1vw 2vw;
+}
+header nav{
+    width:30vw; margin-top:3.8vw;
+}
+header nav ul{
+    display:flex;
+    justify-content:space-between;
+}
+header nav ul li a{
+    font-size: 1vw;
+    color:#fff;
+    font-weight:bold;
+    text-shadow:1px 1px 1px #999;
+}
+header .top_menu{
+    width:10vw;
+    margin:2vw;
+    margin-top:2vw;
+}
+header .top_menu ul{
+    display:flex;
+    justify-content:space-between;
+}
+header .top_menu ul li a{
+    font-size:0.8vw;
+    color:#fff;
+    text-shadow:1px 1px 1px #999;
+}
+header ul li a{position:relative;}
+header ul li a:hover{
+    color:#fff;
+}
+header a:after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:3px;
+    background-color:#fff;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-6px;
+    transition:all 0.3s;
+}
+header ul li a:hover:after{
+    width:100%;
+}
+header .top_menu a:after{
+    height:1px;
+}
+
+header .mobile_btn{display:none;}
+header .mobile_menu{display:none;}
+
+section{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.main{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+}
+.main video{
+    width:100%;
+    position:absolute;
+    left:50%; top:50%;
+    transform:translateX(-50%) translateY(-50%);
+} /*가로세로 가운데로 정렬 (X-가로 Y-세로)*/
+
+/*비디오에 겹쳐지는 글*/
+.main .main_txt{
+    position:absolute;
+    width:50vw;
+    left:50%; top:50%;
+    transform:translateX(-50%) translateY(-50%);
+    text-align:center;
+    top:25vw;
+    color:#fff;
+    text-shadow:2px 2px 2px #666;
+}
+.main .main_txt h1{
+    font-size:5vw;
+}
+.signiture{
+    margin-top:8vw;
+}
+.signiture h1{
+    text-align:center;
+    font-size:1.8vw;
+    font-weight:bold;
+    margin-bottom:4vw;
+}
+.signiture .swiper-container{
+    width:80%;
+    /*height:25vw;*/
+    margin:0 auto;
+    overflow:hidden;
+}
+.signiture .swiper-slide a{
+    width:100%;
+    height:100%;
+}
+.signiture .swiper-slide p{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.6);
+    text-align:center;
+    color:#fff;
+    top:0;
+    left:0;
+    font-size:1vw;
+    line-height:2vw;
+    box-sizing:border-box;
+    display:none;
+    padding:9vw 0;
+}
+.signiture .swiper-slide:hover p{
+    display:block;
+}
+.signiture .swiper-slide span{
+    font-size:0.6vw;
+    line-height:3vw;
+    padding:0.5vw;
+    border:1px solid #fff;
+}
+.signiture .swiper1 .s1_next img{
+    width:1.3vw;
+    outline:none;
+}
+.signiture .swiper1 .s1_prev img{
+    width:1.3vw;
+    outline:none;
+}
+.new{
+    margin-top:-8vw;
+}
+.new .left_area{
+    padding:0;
+    background-image:url(../img/n1.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    box-sizing:border-box;
+}
+.new .right_area{
+    height:100vh;
+    display:block;
+    padding:0;
+}
+.new .right_area ul{
+    display:flex;
+    flex-flow:row wrap;
+}
+.new .right_area ul li{
+    padding:0;
+    width:50%;
+    height:50vh;
+    box-sizing:border-box;
+}
+
+.story .row{
+    width:80%;
+    margin:0 auto;
+}
+.story h1{
+    margin-top:8vw;
+    text-align:center;
+    font-size:1.8vw;
+    font-weight:bold;
+    margin-bottom:4vw;
+}
+.slide .s3_prev{
+    width:6.5vw;
+    left:0;
+    outline:none; /*부트스트랩 이용했을 때 버튼 클릭시 테두리 생김 제거*/
+}
+.slide .s3_next{
+    width:6.5vw;
+    right:0;
+    outline:none;
+}
+
+.banner{
+    margin-top: 8vw;
+}
+.banner .col-sm-6{
+    padding:0;
+}
+
+.membership .row{
+    width:80%;
+    margin:0 auto;
+}
+.membership h1{
+    text-align:center;
+    margin-top:8vw;
+    font-weight:bold;
+    font-size:1.4vw;
+}
+.membership .col-sm-4{
+    border:1px solid #333;
+    height:15vw;
+    border-right:none;
+    margin-top:4vw; 
+}
+.membership .col-sm-4:last-child{
+    border-right:1px solid #333;
+}
+.membership .col-sm-4 .coupon{
+    width:4vw;
+    margin:2vw auto;
+}
+.membership .col-sm-4 .member{
+    width:4vw;
+    margin:1.6vw auto;
+}
+.membership .col-sm-4 .review{
+    width:4vw;
+    margin:1.1vw auto;
+}
+.membership span{
+    font-size:1vw;
+    font-weight:bold;
+    text-align:center;
+    display:block;
+    line-height:3vw;
+    margin-top:-1vw; 
+}
+.membership p{
+    font-size:0.8vw;
+    text-align:center;
+    line-height:1.5vw;
+}
+.membership a{
+    text-align:center;
+    padding-top:1vw;
+}
+.map{
+    margin-bottom:5vw;
+}
+.map .row{
+    width:70%;
+    margin:0 auto;
+    margin-top:3vw;
+}
+.map h1{
+    text-align:center;
+    margin-top:8vw;
+    font-size:1.3vw;
+    font-weight:bold;
+}
+.map  p{
+    text-align:center;
+    margin-top:3vw;
+    line-height:2vw;
+    margin-bottom:5vw;
+}
+footer{
+    background-color:#444;
+    height:24vw;
+}
+footer .footer_in{
+    color:#fff;
+    width:1600px;
+    display:flex;
+    margin:0 auto;
+    padding-top:2vw;
+}
+footer .footer_in h1{
+    font-size:1.1vw;
+    margin-right:14vw;
+}
+footer .footer_in h2{
+    font-size:1.1vw;
+    font-weight:bold;
+    line-height:3vw;
+    margin-top:1vw;
+}
+footer .footer_in p{
+    font-size:0.8vw;
+    margin-top:2vw;
+}
+footer .footer_in .custom p{
+    margin:-1vw 0;
+}
+footer .footer_in .info a{
+    color:#fff;
+}
+footer .sns{
+    width:20vw;
+    margin-left:7.5vw;
+    margin-top:-1.5vw;
+}
+footer .sns img{
+    width:1.5vw;
+    float:left;
+    margin:0.5vw;
+}
+address{
+    margin-top:3.5vw;
+    color:#fff;
+    font-size:0.7vw;
+    margin-left:7.7vw;
+}
+address p:last-child{
+    font-size:0.6vw;
+}
+/*태블릿*/
+@media screen and (max-width:960px){
+    
+}
+/*모바일*/
+@media screen and (max-width:480px){
+    header{
+        height:70px;
+    }
+    header nav{
+        display:none;
+    }
+    header .top_menu{
+        display:none;
+    }
+    header .logo{
+        width:15vw;
+        margin:0.3vw 2vw;
+    }
+    header .mobile_btn{
+        display:block;
+        width:8.8vw;
+        margin:3vw;
+        margin-top:4vw;
+    }
+    header .mobile_menu{
+        display:block;
+        position:absolute;
+        top:0;
+        left:-100vw;
+        background-color:rgba(0,0,0,0.5);
+        width:100%;
+        box-sizing:border-box;
+    }
+    header .mobile_menu .menu_in{
+        background-color:#fff;
+        width:75vw;
+        height:100%;
+        padding:3vw;
+        box-sizing:border-box;
+        float:left;
+    }
+    header .mobile_menu button{
+        float:left;
+        width:10vw;
+        margin:5vw 4vw;
+    }
+    header .mobile_menu .menu_in p{
+        text-align:center;
+        font-size:3vw;
+        margin-top:5vw;
+    }
+    header .mobile_menu .menu_in span{
+        font-weight:bold;
+    }
+    
+    header .mobile_menu .menu_in .member a{
+        float:left;
+        width:50%;
+        text-align:center;
+        font-size:2.5vw;
+        border:1px solid #ccc;
+        padding:1.5vw;
+        box-sizing:border-box;
+    }
+    header .mobile_menu .menu_in .member{
+        width:100%;
+        height:8vw;
+    }
+    header .mobile_menu .menu_in .member a.active{
+        background-color:#212121;
+        color:#fff;
+        border:1px solid #212121;
+    }
+    header .mobile_menu .menu_in .icon{
+        margin-top:4vw;
+    }
+    header .mobile_menu .menu_in .icon ul{
+        display:flex;
+        justify-content:center;
+    }
+    header .mobile_menu .menu_in .icon ul li{
+        width:33.3333333333333%;
+        height:25vw;
+        box-sizing:border-box;
+        padding:4vw 6vw;
+        text-align:center;
+        border:1px solid #ccc;
+        border-right:none; /*!!가운데 겹쳐지는 부분은 2px이 되서 일단 지우고*/
+    }
+    header .mobile_menu .menu_in .icon ul li:last-child{
+        border-right:1px solid #ccc; /*!!라스트차일드의 오른쪽에만 보더를 설정*/
+    }
+    header .mobile_menu .menu_in .icon ul li p{
+        font-size:2.5vw;
+        margin:2vw 0;
+    }
+    header .mobile_menu .menu_in .tab{
+        width:100%;
+        margin-top:5vw;
+    }
+    header .mobile_menu .menu_in .tab .title{
+        display:flex;
+        justify-content:space-between;
+    }
+    header .mobile_menu .menu_in .tab .title a{
+        font-size:2.5vw;
+        font-weight:bold;
+        width:33.33333333333%;
+        border:1px solid #ccc;
+        background-color:#efefef;
+        text-align:center;
+        padding:2vw;
+        box-sizing:border-box;
+        color:#666;
+    }
+    header .mobile_menu .menu_in .tab .title a.active{
+        background-color:#fff;
+        border-bottom:none;
+    }
+    header .mobile_menu .menu_in .tab .content{
+        position:relative;
+        width:100%;
+    }
+    header .mobile_menu .menu_in .tab .content div{
+        width:100%;
+        position:absolute;
+        background-color:#fff;
+        box-sizing:border-box;
+        padding:5vw 0;
+    }
+    header .mobile_menu .menu_in .tab .content div a{
+        width:100%;
+        font-size:2.4vw;
+        padding:1.5vw;
+        background-image:url(../img/arrow.png);
+        background-position:center right;
+        background-repeat:no-repeat;
+        background-size:16px;
+    }
+    .main{
+        height:auto;
+    }
+    .main video{
+        position:relative;
+        top:0;
+        left:0;
+        transform:translateX(0) translateY(0);
+    }
+    .main .main_txt{
+        width:100%;
+    }
+    .main .main_txt h1{
+        font-size:8vw;
+        margin-top:9vw;
+    }
+    .signiture .swiper1{
+        height:45vh;
+    }
+    .signiture h1{
+        font-size:6vw;
+        margin-bottom:10vw;
+    }
+    .signiture .s1_next,
+    .signiture .s1_prev{
+        width:7vw;
+    }
+    
+    .signiture .swiper-slide span{
+        font-size:2.5vw;
+        padding:2vw;
+    }
+    .signiture .over p{
+        font-size:5vw;
+        line-height:8vw;
+        padding-top:27vw;
+    }
+    .new .left_area{
+        
+    }
+    .new .right_area ul li{
+        
+    }
+    .new .col-sm-6 {
+        margin-top:15vw;
+        height:50vh;
+    }
+    .story h1{
+        font-size:6vw;
+    }
+    .story .col-sm-3{
+        width:40vw;
+        margin:5vw 0;
+    }
+    .slide{
+        margin-top:8vw;
+    }
+    .banner{
+        margin-top:8vw;
+    }
+    .membership .col-sm-4{
+        border-right:1px solid #333;
+        height:25vw;
+        width:50vw;
+        margin:0 auto;
+    }
+    .membership h1{
+        font-size:6vw;
+        margin-bottom:5vw;
+    }
+    .membership span{
+        font-size:4vw;
+        line-height:9vw;
+    }
+    .membership p{
+        font-size:3vw;
+        line-height:5vw;
+    }
+    .membership .col-sm-4{
+        height:40vw;
+        border:1px solid #333;
+        margin-top:4vw; 
+    }
+    .membership .col-sm-4 .coupon{
+        width:10vw;
+        margin:5vw auto;
+    }
+    .membership .col-sm-4 .member{
+        width:10vw;
+        margin:4vw auto;
+    }
+    .membership .col-sm-4 .review{
+        width:10vw;
+        margin:3vw auto;
+    }
+    .map h1{
+        font-size:6vw;
+        margin-bottom:5vw;
+    }
+    .map .col-sm-12 iframe{
+        height:20vh;
+    }
+    .map p{
+        font-size:3vw;
+        line-height:5vw;
+    }
+    footer{
+        height:35vw;
+    }
+    footer .footer_in{
+        display:none;
+    }
+    footer .sns{
+        margin:0 auto;
+    }
+    footer .sns img{
+        width:3vw;
+        margin:1.2vw;
+        margin-top:5vw;
+    }
+    address {
+        text-align:center;
+        width:80%;
+        font-size:2.5vw;
+        position:absolute;
+        margin-top:11vw;
+        margin-left:8vw;
+    }
+    address p{
+        font-size:2.5vw;
+    }
+    }
+
+
+
+
