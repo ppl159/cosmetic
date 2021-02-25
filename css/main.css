@@ -354,7 +354,275 @@ address p:last-child{
 }
 /*태블릿*/
 @media screen and (max-width:960px){
+    header{
+        height:70px;
+    }
+    header nav{
+        display:none;
+    }
+    header .top_menu{
+        display:none;
+    }
+    header .logo{
+        width:15vw;
+        margin:0.3vw 2vw;
+    }
+    header .mobile_btn{
+        display:block;
+        width:8.8vw;
+        margin:3vw;
+        margin-top:4vw;
+    }
+    header .mobile_menu{
+        display:block;
+        position:absolute;
+        top:0;
+        left:-100vw;
+        background-color:rgba(0,0,0,0.5);
+        width:100%;
+        box-sizing:border-box;
+    }
+    header .mobile_menu .menu_in{
+        background-color:#fff;
+        width:75vw;
+        height:100%;
+        padding:3vw;
+        box-sizing:border-box;
+        float:left;
+    }
+    header .mobile_menu button{
+        float:left;
+        width:10vw;
+        margin:5vw 4vw;
+    }
+    header .mobile_menu .menu_in p{
+        text-align:center;
+        font-size:3vw;
+        margin-top:5vw;
+    }
+    header .mobile_menu .menu_in span{
+        font-weight:bold;
+    }
     
+    header .mobile_menu .menu_in .member a{
+        float:left;
+        width:50%;
+        text-align:center;
+        font-size:2.5vw;
+        border:1px solid #ccc;
+        padding:1.5vw;
+        box-sizing:border-box;
+    }
+    header .mobile_menu .menu_in .member{
+        width:100%;
+        height:8vw;
+    }
+    header .mobile_menu .menu_in .member a.active{
+        background-color:#212121;
+        color:#fff;
+        border:1px solid #212121;
+    }
+    header .mobile_menu .menu_in .icon{
+        margin-top:4vw;
+    }
+    header .mobile_menu .menu_in .icon ul{
+        display:flex;
+        justify-content:center;
+    }
+    header .mobile_menu .menu_in .icon ul li{
+        width:33.3333333333333%;
+        height:25vw;
+        box-sizing:border-box;
+        padding:4vw 6vw;
+        text-align:center;
+        border:1px solid #ccc;
+        border-right:none; /*!!가운데 겹쳐지는 부분은 2px이 되서 일단 지우고*/
+    }
+    header .mobile_menu .menu_in .icon ul li:last-child{
+        border-right:1px solid #ccc; /*!!라스트차일드의 오른쪽에만 보더를 설정*/
+    }
+    header .mobile_menu .menu_in .icon ul li p{
+        font-size:2.5vw;
+        margin:2vw 0;
+    }
+    header .mobile_menu .menu_in .tab{
+        width:100%;
+        margin-top:5vw;
+    }
+    header .mobile_menu .menu_in .tab .title{
+        display:flex;
+        justify-content:space-between;
+    }
+    header .mobile_menu .menu_in .tab .title a{
+        font-size:2.5vw;
+        font-weight:bold;
+        width:33.33333333333%;
+        border:1px solid #ccc;
+        background-color:#efefef;
+        text-align:center;
+        padding:2vw;
+        box-sizing:border-box;
+        color:#666;
+    }
+    header .mobile_menu .menu_in .tab .title a.active{
+        background-color:#fff;
+        border-bottom:none;
+    }
+    header .mobile_menu .menu_in .tab .content{
+        position:relative;
+        width:100%;
+    }
+    header .mobile_menu .menu_in .tab .content div{
+        width:100%;
+        position:absolute;
+        background-color:#fff;
+        box-sizing:border-box;
+        padding:5vw 0;
+    }
+    header .mobile_menu .menu_in .tab .content div a{
+        width:100%;
+        font-size:2.4vw;
+        padding:1.5vw;
+        background-image:url(../img/arrow.png);
+        background-position:center right;
+        background-repeat:no-repeat;
+        background-size:16px;
+    }
+    .main{
+        height:auto;
+    }
+    .main video{
+        position:relative;
+        top:0;
+        left:0;
+        transform:translateX(0) translateY(0);
+    }
+    .main .main_txt{
+        width:100%;
+    }
+    .main .main_txt h1{
+        font-size:8vw;
+        margin-top:9vw;
+    }
+    .signiture .swiper1{
+        height:45vh;
+    }
+    .signiture h1{
+        font-size:6vw;
+        margin-bottom:10vw;
+    }
+    .signiture .s1_next,
+    .signiture .s1_prev{
+        width:7vw;
+    }
+    
+    .signiture .swiper-slide span{
+        font-size:2.5vw;
+        padding:2vw;
+    }
+    .signiture .over p{
+        font-size:5vw;
+        line-height:8vw;
+        padding-top:27vw;
+    }
+    .new{
+        margin-top:15vw;
+    }
+    .new .left_area{
+        height:50vh;
+    }
+    .new .right_area ul li{
+        height:25vh;
+    }
+    .story h1{
+        font-size:6vw;
+        margin:0;
+    }
+    .story .col-sm-3{
+        width:40vw;
+        margin:5vw 0;
+    }
+    .slide{
+        margin-top:8vw;
+    }
+    .banner{
+        margin-top:8vw;
+    }
+    .membership .col-sm-4{
+        border-right:1px solid #333;
+        height:25vw;
+        width:50vw;
+        margin:0 auto;
+    }
+    .membership h1{
+        font-size:6vw;
+        margin-bottom:5vw;
+    }
+    .membership span{
+        font-size:4vw;
+        line-height:9vw;
+    }
+    .membership p{
+        font-size:3vw;
+        line-height:5vw;
+    }
+    .membership .col-sm-4{
+        height:40vw;
+        border:1px solid #333;
+        margin-top:4vw; 
+    }
+    .membership .col-sm-4 .coupon{
+        width:10vw;
+        margin:5vw auto;
+    }
+    .membership .col-sm-4 .member{
+        width:10vw;
+        margin:4vw auto;
+    }
+    .membership .col-sm-4 .review{
+        width:10vw;
+        margin:3vw auto;
+    }
+    .map h1{
+        font-size:6vw;
+        margin-bottom:5vw;
+    }
+    .map .col-sm-12 iframe{
+        width:100%;
+        height:25vh;
+    }
+    .map p{
+        font-size:3vw;
+        line-height:5vw;
+    }
+    footer{
+        height:60vw;
+    }
+    footer .footer_in{
+        display:none;
+    }
+    footer .sns{
+        width:32vw;
+        margin:0 auto;
+    }
+    footer .sns img{
+        width:8vw;
+        margin:1.2vw;
+        margin-top:4vw;
+    }
+    address {
+        text-align:center;
+        width:80%;
+        font-size:4vw;
+        position:absolute;
+        margin-top:15vw;
+        margin-left:10vw;
+    }
+    address p:last-child{
+        font-size:3vw;
+    }
+    }
+
 }
 /*모바일*/
 @media screen and (max-width:480px){
