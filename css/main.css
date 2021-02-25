@@ -533,6 +533,7 @@ address p:last-child{
     }
     .new{
         margin-top:8vw;
+        margin-bottom:-15vw;
     }
     .new .col-sm-6{
         margin:2vw;
