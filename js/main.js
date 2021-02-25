@@ -4,7 +4,6 @@ $(document).ready(function(){
     var filter = "win16|win32|win64|mac|macintel"; 
     if ( navigator.platform ) { if ( filter.indexOf( navigator.platform.toLowerCase() ) < 0 ) {
         //모바일
-        
     }else{
         //pc
         //section의 높이는 브라우저의 높이로 설정
@@ -13,7 +12,7 @@ $(document).ready(function(){
     }
     }
     //모바일 메뉴의 높이는 장치의 높이와 같음
-    $('.mobile_menu').css('height','auto');
+    $('.mobile_menu').css('height',winH);
     
     //헤더 배경 변환
     $(window).scroll(function(){
