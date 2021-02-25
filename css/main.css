@@ -530,13 +530,10 @@ address p:last-child{
         padding-top:27vw;
     }
     .new{
-        margin-top:8vw;
-    }
-    .new .col-sm-6{
-        margin:2vw;
+        margin-top:15vw;
     }
     .new .left_area{
-        height:35vh;
+        height:50vh;
     }
     .new .right_area ul li{
         height:25vh;
