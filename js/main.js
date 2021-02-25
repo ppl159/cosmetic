@@ -13,7 +13,7 @@ $(document).ready(function(){
     }
     }
     //모바일 메뉴의 높이는 장치의 높이와 같음
-    $('.mobile_menu').css('height',winH);
+    $('.mobile_menu').css('height','auto');
     
     //헤더 배경 변환
     $(window).scroll(function(){
