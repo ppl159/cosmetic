@@ -353,7 +353,7 @@ address p:last-child{
     font-size:0.6vw;
 }
 /*태블릿*/
-@media screen and (max-width:960px){
+@media screen and (max-width:360px){
     header{
         height:70px;
     }
@@ -623,7 +623,6 @@ address p:last-child{
     }
     }
 
-}
 /*모바일*/
 @media screen and (max-width:480px){
     header{
@@ -799,6 +798,9 @@ address p:last-child{
     }
     .new{
         margin-top:15vw;
+    }
+    .new .row{
+        height:50vh;
     }
     .new .left_area{
         height:50vh;
