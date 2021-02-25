@@ -189,7 +189,23 @@ section{
     width:50%;
     height:50vh;
     box-sizing:border-box;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
+.new .right_area ul li:first-child{
+    background-image:url(../img/n2.png);
+}
+.new .right_area ul li:nth-child(2){
+    background-image:url(../img/n3.png);
+}
+.new .right_area ul li:nth-child(3){
+    background-image:url(../img/n4.png);
+}
+.new .right_area ul li:last-child{
+    background-image:url(../img/n5.png);
+}
+
 
 .story .row{
     width:80%;
@@ -521,10 +537,10 @@ address p:last-child{
         
     }
     .new .left_area{
-        
+        height:50vh;
     }
     .new .right_area ul li{
-        
+        height:30vh;
     }
     .story h1{
         font-size:6vw;
