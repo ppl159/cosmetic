@@ -205,8 +205,6 @@ section{
 .new .right_area ul li:last-child{
     background-image:url(../img/n5.png);
 }
-
-
 .story .row{
     width:80%;
     margin:0 auto;
@@ -533,7 +531,6 @@ address p:last-child{
     }
     .new{
         margin-top:8vw;
-        margin-bottom:-15vw;
     }
     .new .col-sm-6{
         margin:2vw;
