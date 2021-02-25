@@ -7,7 +7,7 @@ $(document).ready(function(){
     }else{
         //pc
         //section의 높이는 브라우저의 높이로 설정
-        $('section').css('height','auto');
+        $('.new').css('height','auto');
         $('.banner').css('height','auto'); //밑에가 잘려서 .banner만 높이를 auto로 맞춰줌
     }
     }
