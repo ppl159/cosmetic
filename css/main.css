@@ -515,15 +515,16 @@ address p:last-child{
         line-height:8vw;
         padding-top:27vw;
     }
+    
+    .new .col-sm-6 {
+        margin-top:8vw;
+        
+    }
     .new .left_area{
         
     }
     .new .right_area ul li{
         
-    }
-    .new .col-sm-6 {
-        margin-top:15vw;
-        height:50vh;
     }
     .story h1{
         font-size:6vw;
