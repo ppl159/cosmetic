@@ -534,7 +534,6 @@ address p:last-child{
     
     .new .col-sm-6 {
         margin-top:8vw;
-        margin-bottom:8vw;
     }
     .new .left_area{
         height:20vh;
@@ -603,27 +602,30 @@ address p:last-child{
         line-height:5vw;
     }
     footer{
-        height:40vw;
+        height:60vw;
     }
     footer .footer_in{
         display:none;
     }
     footer .sns{
-        width:23vw;
+        width:32vw;
         margin:0 auto;
     }
     footer .sns img{
-        width:5vw;
+        width:8vw;
         margin:1.2vw;
-        margin-top:3vw;
+        margin-top:4vw;
     }
     address {
         text-align:center;
         width:80%;
-        font-size:3vw;
+        font-size:4vw;
         position:absolute;
-        margin-top:11vw;
-        margin-left:8vw;
+        margin-top:15vw;
+        margin-left:10vw;
+    }
+    address p:last-child{
+        font-size:3vw;
     }
     }
 
