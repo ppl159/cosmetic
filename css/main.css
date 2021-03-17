@@ -168,7 +168,7 @@ section{
 }
 .new .left_area{
     padding:0;
-    background-image:url(../img/n1.png);
+    background-image:url(https://ppl159.github.io/cosmetic/img/n1.png);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -194,16 +194,16 @@ section{
     background-size:cover;
 }
 .new .right_area ul li:first-child{
-    background-image:url(../img/n2.png);
+    background-image:url(https://ppl159.github.io/cosmetic/img/n2.png);
 }
 .new .right_area ul li:nth-child(2){
-    background-image:url(../img/n3.png);
+    background-image:url(https://ppl159.github.io/cosmetic/img/n3.png);
 }
 .new .right_area ul li:nth-child(3){
-    background-image:url(../img/n4.png);
+    background-image:url(https://ppl159.github.io/cosmetic/img/n4.png);
 }
 .new .right_area ul li:last-child{
-    background-image:url(../img/n5.png);
+    background-image:url(https://ppl159.github.io/cosmetic/img/n5.png);
 }
 .story .row{
     width:80%;
@@ -754,7 +754,7 @@ address p:last-child{
         width:100%;
         font-size:2.4vw;
         padding:1.5vw;
-        background-image:url(../img/arrow.png);
+        background-image:url(https://ppl159.github.io/cosmetic/img/arrow.png);
         background-position:center right;
         background-repeat:no-repeat;
         background-size:16px;
